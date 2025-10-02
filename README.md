@@ -2,7 +2,7 @@
 
 ## **Bash Scripting task**
 ***
-📌 **Project Overview
+📌 ## **Project Overview**
 ***
 This repo conatins bash scripts and linux commands for a dtata processing pipeline involving data manipulation,automation, scheduling using cron and logging errors or successes
 ***
@@ -31,8 +31,8 @@ mkdir input output logs
    ```bash
    curl -L -o sales_data.csv https://raw.githubusercontent.com/dataenginneering-community/launchpad/main/Linux.sales_data.csv
    ```
-   Data preprocessing : [View Here](preprocess.sh)
-   The script preprocess.sh made executable using chmod +x [preprocess.sh](preprocess.sh)
+   Data preprocessing : [View Here](input\preprocess.sh)
+   The script preprocess.sh made executable using chmod +x [preprocess.sh](input\preprocess.sh)
 ***
 3. #### **Automation with Cron Jobs**
    Data pipeline was scheduled to run daily at 12AM.
