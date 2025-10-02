@@ -40,10 +40,14 @@ mkdir input output logs
 
   Opening crontab editor
   ```bash
-  cromtab -e #For adding or editing cron jobs
+  crontab -e #For adding or editing cron jobs
   #scheduling pipeline to run 12AM WAT
   0 1 * * /home/okoliogechi74/data_pipeline/input/preprocess.sh>>/home/okoliogechi74/data_pipeline/output/preprocess.log 2>&1
   ```
 4. #### **Logs and monitoring**
-   
-   
+   Monitorin script : [monitor.sh](logs/monitor.sh)
+   The script scans for ERROR/case insentive
+
+   **Scheduling cron job for moitoring data to run 12:00 AM Nigerian time**
+    5 1 * * * /home/okoliogechi74/data_pipeline/monitor.sh >>/home/okoliogechi74/data_pipeline/logs/monitor.log 2>&1
+5. **File or directory premissions**
