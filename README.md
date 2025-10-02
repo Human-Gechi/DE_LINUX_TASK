@@ -18,7 +18,7 @@ data_pipeline/#Parent directory
   |--preprocess.log #Log file for success or error in processing input file
   |--monitoring.log #Log file for keeping monitoring logs
   ***
-1. #### **Setting up the environment
+1. #### **Setting up the environment**
      Initiating a connection to the server,generating SSH keys for connecting to github, remotely add url and creating directories for the task using
 ```bash
 mkdir data_pipeline
@@ -31,8 +31,8 @@ mkdir input output logs
    ```bash
    curl -L -o sales_data.csv https://raw.githubusercontent.com/dataenginneering-community/launchpad/main/Linux.sales_data.csv
    ```
-   Data preprocessing : [View Here](input\preprocess.sh)
-   The script preprocess.sh made executable using chmod +x [preprocess.sh](input\preprocess.sh)
+   Data preprocessing : [View Here](input/preprocess.sh)
+   The script preprocess.sh made executable using chmod +x [preprocess.sh](input/preprocess.sh)
 ***
 3. #### **Automation with Cron Jobs**
    Data pipeline was scheduled to run daily at 12AM.
