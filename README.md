@@ -1,6 +1,6 @@
 ## **Bash Scripting task**
 ***
-📌## **Project Overview**
+## 📌 **Project Overview**
 ***
 This repo conatins bash scripts and linux commands for a dtata processing pipeline involving data manipulation,automation, scheduling using cron and logging errors or successes
 ***
