@@ -47,7 +47,7 @@ data_pipeline/#Parent directory
 
    **Scheduling cron job for moitoring data pipeline to run 12:05 AM Nigerian time**
    ```bash
-    5 1 * * * /home/okoliogechi74/data_pipeline/monitor.sh >>/home/okoliogechi74/data_pipeline/logs/monitor.log 2>&1
+    5 1 * * * /home/okoliogechi74/data_pipeline/logs/monitor.sh >>/home/okoliogechi74/data_pipeline/logs/monitor.log 2>&1
    ```
 6. #### **File or directory premissions**
    **INPUT FOLDER**
