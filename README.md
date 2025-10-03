@@ -45,9 +45,11 @@ data_pipeline/#Parent directory
    Monitorin script : [monitor.sh](logs/monitor.sh)
    The script scans for ERROR/case insentive
 
-   **Scheduling cron job for moitoring data to run 12:00 AM Nigerian time**
+   **Scheduling cron job for moitoring data pipeline to run 12:05 AM Nigerian time**
+   ```bash
     5 1 * * * /home/okoliogechi74/data_pipeline/monitor.sh >>/home/okoliogechi74/data_pipeline/logs/monitor.log 2>&1
-5. #### **File or directory premissions**
+   ```
+6. #### **File or directory premissions**
    **INPUT FOLDER**
    The [sales_data.csv](input/sales_data.csv) has file permission 644
    The [preprocess.sh](input/preprocess.sh) has file permission 700
