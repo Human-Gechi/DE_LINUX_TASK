@@ -1,8 +1,8 @@
 ## **DE_LINUX_TASK**
 
-## **Bash Scripting task**
+##**Bash Scripting task**
 ***
-📌 ## **Project Overview**
+📌 ##**Project Overview**
 ***
 This repo conatins bash scripts and linux commands for a dtata processing pipeline involving data manipulation,automation, scheduling using cron and logging errors or successes
 ***
@@ -41,7 +41,7 @@ mkdir input output logs
   Opening crontab editor
   ```bash
   crontab -e #For adding or editing cron jobs
-  #scheduling pipeline to run 12AM WAT
+  #scheduling pipeline to run 12AM WAT ; WAT is 1 hour ahead of CEST time
   0 1 * * /home/okoliogechi74/data_pipeline/input/preprocess.sh>>/home/okoliogechi74/data_pipeline/output/preprocess.log 2>&1
   ```
 4. #### **Logs and monitoring**
@@ -51,3 +51,14 @@ mkdir input output logs
    **Scheduling cron job for moitoring data to run 12:00 AM Nigerian time**
     5 1 * * * /home/okoliogechi74/data_pipeline/monitor.sh >>/home/okoliogechi74/data_pipeline/logs/monitor.log 2>&1
 5. **File or directory premissions**
+   The input folder has permissions on both files in it
+   The [sales_data.csv](input/sales_data.csv) has file permission 644
+   The [preprocess.sh](input/preprocess.sh) has file permission 700
+
+   OUTPUT FOLDER
+   The [cleaned_sales_data.csv](output/cleaned_sales_data.csv) has file permission 644 : user/owner can read/write;others       can only read
+
+   LOGS FOLDER
+   The [preprocess.log](logs/preprocess.log) and [monitoring.log](logs/monitoring.log) has file permissions 600: user can       read and write while group and others cannot.
+
+   The [monitor.sh](logs/monitor.sh) has file permissions 700; only the user can read,write and execute. Everyother person      can't.
