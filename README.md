@@ -1,7 +1,7 @@
 # **Bash Scripting task**
 ## 📌 **Project Overview**
 ***
-This repo conatins bash scripts and linux commands for a dtata processing pipeline involving data manipulation,automation, scheduling using cron and logging errors or successes
+This repo conatins bash scripts for a data processing pipeline involving data manipulation,automation, scheduling using cron and logging errors or successes
 ***
 ### **Project Structure**
 data_pipeline/#Parent directory
